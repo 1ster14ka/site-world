@@ -33,6 +33,10 @@ p {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .title {
   font-weight: 700;
   font-size: 40px;
@@ -61,7 +65,7 @@ p {
   padding: 0 10px;
 }
 
-.container-footer {
+.container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -304,4 +308,121 @@ p {
   font-size: 16px;
   line-height: 1.2;
   color: #111;
+}
+
+/* ========================================== */
+
+/* =======================Last=================== */
+
+.section-last {
+  padding: 32px 0 28px 0;
+}
+.container {
+}
+.last-country-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title {
+}
+.country-btn {
+}
+.last-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.last-list:last-child {
+  margin-bottom: 0;
+}
+
+.last-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.img-last-hotel {
+  margin-bottom: 12px;
+}
+.hotel-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #111;
+  margin-bottom: 8px;
+}
+.last-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #766f6f;
+  margin-bottom: 8px;
+}
+
+.score-wrap {
+  display: flex;
+  gap: 8px;
+}
+
+.score {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  color: #266294;
+}
+
+/* =========================================== */
+/* ==================FOOTER ===============================*/
+
+.footer {
+  padding: 34px 0 29px 0;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo-wrap {
+  max-width: 87px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.container-logo-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #266294;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  min-width: 684px;
+}
+
+.footer-item {
+  display: flex;
+  margin-left: auto;
+  gap: 64px;
+  margin-bottom: 35px;
+}
+
+.footer-item-social {
+  display: flex;
+  margin-left: auto;
+  gap: 24px;
+}
+
+.footer-soc-icon {
+  fill: transparent;
+  stroke: #266294;
+}
+
+.footer-item-icon {
+  /* display: flex; */
+  max-width: 24px;
 }
