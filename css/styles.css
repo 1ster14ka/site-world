@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -35,6 +39,7 @@ p {
 
 button {
   cursor: pointer;
+  font-family: "Play", sans-serif;
 }
 
 .title {
@@ -70,6 +75,10 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+
+.icon-menu {
+  display: none;
 }
 
 .container-logo {
@@ -423,6 +432,5 @@ button {
 }
 
 .footer-item-icon {
-  /* display: flex; */
   max-width: 24px;
 }

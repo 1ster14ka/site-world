@@ -1,0 +1,153 @@
+@media (max-width: 390px) {
+  .container {
+    padding: 0 20px;
+    max-width: 430px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  section:not(.section-balloon) {
+    display: none;
+  }
+
+  /* =======================Header=================== */
+
+  .header {
+    padding: 12px 0;
+  }
+
+  .icon-menu {
+    display: block;
+    fill: #266294;
+  }
+
+  .icon-logo {
+    width: 41px;
+    height: 45px;
+    margin-bottom: 4px;
+  }
+
+  .logo-text {
+    min-width: 73px;
+    font-size: 15px;
+  }
+
+  .header-btn {
+    border: 2px solid #266294;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: "Play", sans-serif;
+    width: 139px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  /* ================================= */
+
+  /* ============================Balloon========================= */
+  .section-balloon {
+    padding: 80px 0 250px 0;
+    background-image: url(../images/balloon-mobile@2x.jpg);
+    background-position: center center;
+    height: 700px;
+    margin-bottom: 0;
+  }
+
+  .container-balloon {
+    display: block;
+  }
+
+  .wrapp-text {
+    margin-bottom: 106px;
+  }
+
+  .balloon-title {
+    font-size: 48px;
+    max-width: 255px;
+  }
+
+  .balloon-text {
+    font-size: 24px;
+  }
+
+  .wrapp-btn {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .find-btn {
+    height: 48px;
+  }
+
+  .apply-btn {
+    height: 48px;
+  }
+
+  .img-balloon {
+    width: 37px;
+    height: 46px;
+    top: 41px;
+    left: 152px;
+  }
+
+  /* ====================================================== */
+  /* =========================FOOTER============================= */
+  .footer {
+    padding: 24px 0 49px 0;
+  }
+
+  .container-footer {
+    display: flex;
+    position: relative;
+    height: 238px;
+  }
+
+  .footer-logo-wrap {
+    position: absolute;
+    top: 0;
+    right: 60px;
+  }
+
+  .container-logo-text {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+  .footer-item {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .footer-item-social {
+    position: absolute;
+    right: 20px;
+    top: 93px;
+  }
+
+  .footer-list {
+    min-width: 0;
+    width: 100%;
+    order: 1;
+  }
+
+  .footer-soc-icon {
+    /* max-width: 20px; */
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-item-social {
+    gap: 11px;
+    align-items: center;
+  }
+
+  .menu-link {
+    font-size: 18px;
+    line-height: 1;
+  }
+}
