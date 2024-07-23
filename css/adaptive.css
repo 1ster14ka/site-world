@@ -16,11 +16,14 @@
 
   .header {
     padding: 12px 0;
+    position: relative;
+    z-index: 2;
   }
 
   .icon-menu {
     display: block;
     fill: #266294;
+    flex-shrink: 0;
   }
 
   .icon-logo {
@@ -103,7 +106,6 @@
   .container-footer {
     display: flex;
     position: relative;
-    height: 238px;
   }
 
   .footer-logo-wrap {
@@ -132,7 +134,7 @@
   .footer-list {
     min-width: 0;
     width: 100%;
-    order: 1;
+    margin-bottom: 32px;
   }
 
   .footer-soc-icon {
@@ -149,5 +151,223 @@
   .menu-link {
     font-size: 18px;
     line-height: 1;
+  }
+
+  /* ======================================== */
+  /* ========================MODAL MOBILE======================= */
+
+  .mobile-modal-overlay.is-open {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mobile-modal-overlay {
+    overflow: hidden;
+    position: fixed;
+    top: 108px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #cfe7f5;
+    opacity: 0.9;
+    pointer-events: auto;
+    z-index: 998;
+  }
+  .mobile-modal {
+    position: absolute;
+    top: 72px;
+    left: 32px;
+    width: 100%;
+    min-height: 170px;
+    z-index: 999;
+  }
+
+  .test {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #cfe7f5;
+    opacity: 0.9;
+    height: 109px;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .test.is-open {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .menu-wrapp {
+    display: flex;
+    gap: 12px;
+  }
+
+  .mobile-menu-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #266294;
+  }
+}
+
+@media screen and (min-width: 391px) and (max-width: 834px) {
+  .container {
+    max-width: 810px;
+  }
+
+  /* ======================HEADER===================== */
+  .icon-logo {
+    width: 41px;
+    height: 45px;
+  }
+
+  .logo-text {
+    font-size: 15px;
+    min-width: 73px;
+  }
+
+  .menu-list {
+    gap: 20px;
+  }
+
+  .menu-link {
+    font-size: 16px;
+  }
+
+  .menu-link > .icon-user {
+    margin-right: 10px;
+  }
+
+  .header-btn {
+    padding: 12px 23px;
+    font-size: 16px;
+  }
+
+  /* =========================================== */
+  /* ==========================BALLOON======================== */
+  .section-balloon {
+    background-image: url(../images/balloonn-backg.jpg);
+    padding: 100px 0 320px 0;
+    margin-bottom: 0;
+  }
+
+  /* ================================================ */
+  /* ========================CRITERION================================== */
+
+  .section-criterion {
+    padding: 48px 0 32px 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .criterion-list {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .criterion-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+  .criterion-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ======================================================== */
+  /* ==========================COUNTRY============================== */
+  .section-country {
+    padding: 48px 0 0 0;
+  }
+
+  .container-country {
+    padding: 0 32px;
+    margin: 0;
+  }
+
+  .country-list {
+    position: relative;
+  }
+
+  .country-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  .country-list .country-item:last-child {
+    display: none;
+  }
+
+  /* ======================================================= */
+  /* ================================LAST========================== */
+
+  .section-last {
+    padding: 48px 0 68px 0;
+  }
+
+  .last-country-wrap {
+    margin-bottom: 24px;
+  }
+
+  .last-title {
+    margin-bottom: 0;
+  }
+
+  .last-list .last-item:last-child {
+    display: none;
+  }
+
+  .last-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  /* =================================================== */
+  /* =====================FOOTER============================== */
+  .footer-list {
+    min-width: 0;
+  }
+
+  .footer-item {
+    gap: 20px;
+  }
+
+  .footer-item-social {
+    gap: 11px;
+  }
+
+  .container-logo-text {
+    font-weight: 400;
+    min-width: 158px;
+  }
+
+  .facebook {
+    order: 1;
+  }
+
+  .twitter {
+    order: 2;
+  }
+
+  .instagram {
+    order: 3;
+  }
+
+  .youtube {
+    order: 4;
+  }
+
+  .mobile-menu-list {
+    display: none;
   }
 }

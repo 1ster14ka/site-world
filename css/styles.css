@@ -6,6 +6,8 @@
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -85,6 +87,10 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.main-logo-web {
+  margin: 0 auto;
 }
 
 .icon-logo {
@@ -246,7 +252,7 @@ button {
 
 /* ================================================ */
 
-/* =======================Criterion=================== */
+/* =======================COUNTRY=================== */
 
 .section-country {
   padding: 32px 0 46px 0;
@@ -254,6 +260,8 @@ button {
 .container {
 }
 .container-country {
+  max-width: 1340px;
+  padding: 0 30px;
 }
 
 .country-title {
@@ -282,9 +290,10 @@ button {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  position: relative;
 }
 .country-item {
-  position: relative;
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 .country-item-arrow {
@@ -294,13 +303,13 @@ button {
 .arrow-left {
   position: absolute;
   top: 114px;
-  left: -32px;
+  left: -25px;
 }
 
 .arrow-right {
   position: absolute;
   top: 114px;
-  right: -32px;
+  right: -25px;
 }
 
 .country-img {
@@ -433,4 +442,8 @@ button {
 
 .footer-item-icon {
   max-width: 24px;
+}
+
+.mobile-menu-list {
+  display: none;
 }
